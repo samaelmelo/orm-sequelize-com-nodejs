@@ -1,6 +1,5 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-
+const express = require('express')
+const bodyParser = require('body-parser')
 
 const app = express()
 
@@ -17,4 +16,7 @@ app.get('/teste', (request, response) => response
 app.listen(port, () => console.log('Servidor rodando na porta ', port,));
 
 
-export default app;
+module.exports = {
+  app
+} 
+  
